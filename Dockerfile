@@ -6,6 +6,7 @@ COPY ./requirements.txt /code/requirements.txt
 RUN pip install -r /code/requirements.txt
 
 COPY . /code/
+RUN chmod +x /code/manage.py
 WORKDIR /code/
 
 EXPOSE 8000
